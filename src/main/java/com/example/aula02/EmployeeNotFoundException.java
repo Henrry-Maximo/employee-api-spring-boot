@@ -4,7 +4,7 @@ package com.example.aula02;
 public class EmployeeNotFoundException extends RuntimeException {
 
     // alterando o constructor da classe
-    public EmployeeNotFoundException(Long id) {
-        super("Could not find the employee: " + id);
+    EmployeeNotFoundException(Long id) {
+        super("Could not find the employee with ID: " + id);
     }
 }

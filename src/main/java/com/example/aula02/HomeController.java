@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 public class HomeController {
 
     @GetMapping()
-    public String Hello() {
+    public String HelloWorld() {
         return "Hello World";
     }
 
@@ -17,9 +17,11 @@ public class HomeController {
     public LocalDateTime Now() {
         return LocalDateTime.now();
     }
-
-//    @GetMapping("/employee")
-//    public Employee TestEmployee() {
-//        return new Employee("Henrique");
-//    }
 }
+
+/*
+    @GetMapping("/employee")
+    public Employee TestEmployee() {
+        return new Employee("Henrique");
+    }
+*/

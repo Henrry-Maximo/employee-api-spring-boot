@@ -6,21 +6,24 @@ import jakarta.persistence.Id;
 
 import java.util.Objects;
 
+/*
+    public Employee(String name) {
+        this.name = name;
+    }
+
+    public String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+*/
+
 @Entity
 public class Employee {
-//    public Employee(String name) {
-//        this.name = name;
-//    }
-//
-//    public String name;
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
     private @Id
     @GeneratedValue long id;
     private String name;
@@ -32,6 +35,14 @@ public class Employee {
     public Employee(String name, String role) {
         this.name = name;
         this.role = role;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {
